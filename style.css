@@ -2,6 +2,14 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 30px;
+  background-color: darkslategray;
+}
+
+#header{
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 
 .board {
@@ -15,7 +23,8 @@ body {
 .cell {
   width: 100px;
   height: 100px;
-  font-size: 2em;
+  font-size: 4.5em;
+  font-weight: bold;
   background: #eee;
   display: flex;
   justify-content: center;
@@ -23,12 +32,32 @@ body {
   cursor: pointer;
   text-align: center;
 }
-
+ 
 .cell.taken {
   cursor: not-allowed;
 }
 
 #message {
   margin-top: 20px;
-  font-size: 1.2em;
+  font-size: 1.50em;
+  color: #fff;
+}
+
+button{
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 5px 15px;
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+
+}
+
+
+
+button:hover{
+  color: #000;
+  background-color: #fff;
+  transform: translateY(-3px);
 }
